@@ -24,6 +24,27 @@
   width: auto;
 }
 
+.navbar-wrapper .navbar-brand {
+  width: auto;
+  color: white;
+}
+.navbar-wrapper .navbar-collapse {
+  width: auto;
+  color: white;
+}
+.tableauPlaceholder {
+  padding-top: 60px !important;
+  padding-right: 140px !important;
+  padding-left: 140px !important;
+  padding-bottom: 60px !important;
+}
+.tableauViz {
+  padding: 35px !important;
+}
+.header {
+  cursor: pointer;
+}
+
 
 /* RESPONSIVE CSS
   -------------------------------------------------- */
@@ -50,6 +71,7 @@
       margin-bottom: 15px;
       font-size: 24px;
       line-height: 3;
+      color: rgb(0, 0, 0)  
     }
   
     .featurette-heading {

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Spring Break Algorithm  </title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <link href="style.css" rel="stylesheet">
+      
+      
+      
+      
+      
+  </head>
+
+<!-- NAVBAR
+================================================== -->
+<body>
+    
+<div class="container">
+    <div class="row">
+        <!--<div class="col-md-1"></div> -->
+            <div class="col-md-12">
+                <div class="navbar-wrapper">            
+                
+                    <nav class="navbar navbar-inverse navbar-static-top" style="background-color: maroon">                      
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+
+
+                        <a class="navbar-brand" href="home.html">Student Alcohol Consumption</a>
+
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                          <ul class="nav navbar-nav">
+
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Analytics Of The Data <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+
+                                <li><a href="predicted.html">Predicted Grades</a></li>
+                                <li role="separator" class="divider"></li>
+
+                                <li><a href="actual.html">Actual Grades</a></li>
+
+                              </ul>
+                              </li>
+                            <!-- <li class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analytics Of The Data<span class="caret"></span></a>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="portugessanalytics.html">Portugess Student</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="mathsanalytics.html">Maths Students</a></li>
+                              </ul>
+                              </li> -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning <span class="caret"></span></a>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="models.html">Models</a></li>
+
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                    </nav>
+                </div>
+                    
+
+            </div>
+            <!--<div class="col-md-1"></div>-->
+    </div>
+    
+
+    
+    <script type="text/javascript" 
+    src="jquery-1.9.1.js"> 
+</script> 
+
+<script type="text/javascript" src= "bootstrap.min.js"></script>
+
+<!-- create a bootstrap card in a container-->
+<div class="row">
+        <div class="col-md-1"></div>
+            <div class="col-md-10">
+<!--Bootstrap card with slider class-->
+<div id="carousel-demo" 
+     class="carousel slide"
+     data-ride="carousel"> 
+    <div class="carousel-inner"role="listbox"> 
+         
+           
+        <div class="item active"> 
+          <div class="carousel-caption">
+            <h1>How much can you party on Spring Break and still pass with a C?...</h1>
+          </div>
+            <img src= "images/being drank.png"> 
+        </div> 
+        
+    </div> 
+    <!--slider control for card-->
+    <!-- <a class="left carousel-control"
+       href="#carousel-demo"
+       data-slide="prev"> 
+        <span class="glyphicon glyphicon-chevron-left"> 
+      </span> 
+    </a> 
+    <a class="right carousel-control" 
+       href="#carousel-demo" 
+       data-slide="next"> 
+        <span class="glyphicon glyphicon-chevron-right"> 
+      </span> 
+    </a>  -->
+</div>
+    <p class="text-center"><p class="text-justify"> If you are asking yourself the age-old student question of how hard can I party and still pass with a C? Well look no further than our fine-tuned machine learning predicted analytics. Feel free to puruse through our data of like-minded students like yourself to see where you can draw the line at passing and partying!</p>
+ 
+<p class="text-center"><p class="text-justify">To ensure the accuracy of our machine learning predictions we used five different machine learning models to perform our regressions on. These models included: Random Forest, Decision Tree, Linear Regression, Polynimal Curve Regression, and Support Vector Machine. After carefully reviewing the accuracy percentages we determined that the (SVM) or Support-vector machine was the most accurate machine learning regression analysis for our dataset. Our Dataset looked at close to 1,000 students to ensure we had encompassed all walks of student life, just like yourself! Feel free to check out our Machine Learning tab above for a more in depth look at the regression analysis. We know how serious you are about passing your classes and partying much as possible! Our Spring Break Algorithm team has your back to make the most accurate decision possible! </p>
+
+                
+                
+                 <label for="beers">Beers:</label>
+        <input type="text" id="beers" name="beers"><br>
+          
+       <br><br>
+          
+      
+        <button type="submit" id="submit">Submit</button>  
+          
+          
+        <br><br><br>          
+          
+          <!-- output -->
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" name="grade" disabled><br> 
+                
+                
+                
+                
+</div> 
+<div class="col-md-1"></div>
+</div>
+
+
+<!-- FOOTER -->
+    <div class="row">
+        
+            <div class="col-md-12">
+<footer>
+    <p class="text-center">&copy; 2020 Spring Break Algorithm, Inc. </p>
+</footer>
+
+</div>
+    </div>
+    </div><!-- /.container -->
+
+    <!-- JavaScript
+    ================================================== -->
+    <!-- Import TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+  <!-- Import tfjs-vis -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+
+    <script src="jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="machine-learning.js"></script>
+<script src="bootstrap.min.js"></script>
+    <script src="jquery-1.12.4.min.js"></script>
+    
+    <script src="bootstrap.min.js"></script>
+  </body>
+</html>
+
